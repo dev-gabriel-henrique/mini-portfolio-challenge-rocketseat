@@ -1,0 +1,52 @@
+#info {
+  position: relative;
+  
+  & .bg {
+    & img {
+      position: absolute;
+      z-index: -1;
+    }
+  }
+  
+  & .header {
+    padding-block: 1rem;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 3rem;
+
+    & span {
+      color: #3996DB;
+    }
+    
+    & img {
+      width: 4rem;
+      margin-inline: auto;
+      border-radius: 50%;
+      border: 2px solid #3996DB;
+    }
+
+    & a {
+      width: .8rem;
+      margin: auto;
+      & img {
+        border: 0;
+      }
+    }
+  }
+}
+
+@media (width >= 80em) {
+  #info {
+    & .header {
+      padding-top: 10rem;
+      margin-bottom: 6rem;
+      & img {
+        width: 9.375rem;
+      }
+      & a {
+        width: 3rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+}

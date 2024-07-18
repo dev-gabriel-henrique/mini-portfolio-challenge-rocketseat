@@ -1,0 +1,49 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-0\.5 {
+  gap: .5rem;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.container {
+  --max-width: 375px;
+  width: minmax(var(--max-width), 100%);
+}
+
+@media (width >= 80em) {
+
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+}

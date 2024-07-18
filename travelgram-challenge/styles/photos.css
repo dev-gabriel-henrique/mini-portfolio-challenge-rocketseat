@@ -1,0 +1,18 @@
+#photos {
+  background-color: var(--skeleton-color);
+  & > div {
+    padding: 1rem;
+
+    & img {
+      width: 100%;
+    }
+  } 
+}
+
+@media (width >= 80em) {
+  #photos {
+    & > div {
+      padding: 1.5rem 2rem;
+    }
+  }
+}

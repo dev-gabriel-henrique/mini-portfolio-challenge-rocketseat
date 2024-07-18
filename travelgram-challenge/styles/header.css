@@ -1,0 +1,69 @@
+#info {
+  background-color: var(--surface-color);
+
+  & header {
+    & nav {
+      padding: 1rem;
+      justify-content: space-between;
+    }
+  }
+
+  & .content {
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+
+    & img {
+      width: 7.5rem;
+    }
+
+    & .description {
+      display: grid;
+      gap: 1rem;
+      align-items: center;
+    
+
+    & .detail {
+      width: 17.5rem;
+    }
+  }
+
+    & .info-travel {
+
+      & img {
+        width: initial;
+      }
+    }
+  }
+}
+
+@media (width >=80em) {
+  #info {
+    & nav {
+      padding: 1.25rem 2rem;
+    }
+
+    & .content {
+      display: flex;
+      justify-content: space-between;
+
+      & .description {
+        display: flex;
+        gap: 2rem;
+
+        & img {
+          width: 11rem;
+        }
+
+        & .detail {
+          width: 24rem;
+        }
+      }
+
+      & .info-travel {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+footer {
+  background-color: var(--surface-color);
+  padding: 1rem;
+
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+
+  & .terms {
+    display: flex;
+    gap: 1rem;
+    margin-inline: auto;
+  }
+}
+
+@media (width >= 80em) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: initial;
+    padding: 1.5rem 2rem;
+
+    & .terms {
+      margin-inline: initial;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.container {
+  --max-width: 375px;
+  width: minmax(var(--max-width), 100%);
+}
+
+@media (width >= 80em) {
+  .container {
+    --max-width: 80rem;
+  }
+}
