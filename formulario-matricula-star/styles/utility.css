@@ -1,0 +1,17 @@
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+@media (width <= 64em) {
+  .desktop-only {
+    display: none;
+  }
+}
