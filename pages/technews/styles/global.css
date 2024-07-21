@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-smoothing: grayscale;
+}
+
+:root {
+  --brand-color-light: #60A5FA;
+  --brand-color-dark: #1D4ED8;
+  --bg-color: #0F172A;
+  --stroke-color: #1E293B;
+  --txt-color-primary: #F1F5F9;
+  --txt-color-second: #CBD5E1;
+
+  --archivo: "Archivo", sans-serif; 
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--txt-color-primary);
+}
+
+h1 {
+  font: 800 1.5rem/135% var(--archivo);
+}
+
+h2 {
+  font: 800 1rem/140% var(--archivo);
+}
+
+h3 {
+  font: 800 0.875rem/140% var(--archivo);
+}
+
+h4 {
+  font: 700 1rem/140% var(--archivo);
+}
+
+span {
+  font: 600 0.875rem/145% var(--archivo);
+  color: var(--txt-color-second);
+}
+
+p {
+  font: 400 0.875rem/160% var(--archivo);
+  color: var(--txt-color-second);
+}
+
+ul[role="list"] {
+  list-style: none;
+}

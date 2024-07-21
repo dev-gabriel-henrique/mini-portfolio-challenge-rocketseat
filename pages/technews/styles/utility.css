@@ -1,0 +1,36 @@
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+.align-items {
+  align-items: center;
+}
+
+@media (width >= 64em) {
+  .desktop-only {
+    display: initial;
+  }
+
+  .even-columns {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

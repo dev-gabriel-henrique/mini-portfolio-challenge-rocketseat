@@ -1,0 +1,46 @@
+header {
+  & .initial {
+    padding: 1rem;
+    & ul {
+      justify-content: space-between;
+    }
+  }
+
+  & .selector {
+    border-block: 1px solid var(--stroke-color);
+    overflow-x: scroll;
+    padding: 0.875rem 1rem;
+
+    & ul {
+      gap: 1rem;
+
+      & li {
+        white-space: nowrap;
+
+        & span {
+          cursor: pointer;
+          
+        &:hover {
+          color: var( --brand-color-light);
+        }
+      }
+      }
+    }
+  }
+
+  @media (width >= 64em) {
+    & .initial {
+      padding: 1.25rem 2rem;
+
+      & li {
+        gap: .5rem;
+      }
+    }
+
+    & .selector {
+      & ul {
+        justify-content: space-between;
+      }
+    }
+  }
+}
