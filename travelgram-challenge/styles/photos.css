@@ -9,7 +9,7 @@
   } 
 }
 
-@media (width >= 80em) {
+@media (width >= 64em) {
   #photos {
     & > div {
       padding: 1.5rem 2rem;

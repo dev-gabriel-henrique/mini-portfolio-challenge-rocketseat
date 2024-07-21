@@ -35,7 +35,7 @@
   }
 }
 
-@media (width >= 80em) {
+@media (width >= 64em) {
   #info {
     & .header {
       padding-top: 10rem;

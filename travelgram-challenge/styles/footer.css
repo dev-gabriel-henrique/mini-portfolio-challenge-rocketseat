@@ -13,7 +13,7 @@ footer {
   }
 }
 
-@media (width >= 80em) {
+@media (width >= 64em) {
   footer {
     display: flex;
     justify-content: space-between;

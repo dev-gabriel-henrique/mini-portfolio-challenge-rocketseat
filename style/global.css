@@ -46,7 +46,7 @@ a {
   color: #C0C4CE;
 }
 
-@media (width >= 80em) {
+@media (width >= 64em) {
   :root {
     --size-xl: 3.5rem;
     --size-lg: 1.5rem;

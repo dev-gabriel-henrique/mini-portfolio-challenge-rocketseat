@@ -52,7 +52,7 @@ a:hover svg {
   stroke: var(--brand-color);
 }
 
-@media (width >= 80em) {
+@media (width >= 64em) {
   :root {
     --h1: 1.5rem;
   }
