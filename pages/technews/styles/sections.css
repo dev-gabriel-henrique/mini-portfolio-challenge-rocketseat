@@ -1,0 +1,63 @@
+#featured {
+  & img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  & h1, h3 {
+    max-width: 19rem;
+    max-height: 4.8em;
+    text-overflow: clip;
+  }
+
+  & .card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+
+      background: linear-gradient(180deg, transparent 0%, #020617 100%);
+    }
+
+    & figcaption {
+      position: absolute;
+      bottom: 0;
+      padding: 1rem;
+
+      & span {
+        margin-bottom: 0.5rem;
+      }
+
+    }
+  }
+}
+
+@media (width >= 64em) {
+  #featured {
+    grid-auto-flow: column;
+    grid-area: featured;
+
+    & h1, h3 {
+      max-width: 35rem;
+    }
+
+    & .cards {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    & .card {
+      figcaption {
+        padding: 1.5rem;
+
+        &:has(h3) {
+          padding: 0.75rem;
+        }
+      }
+    }
+  }
+}

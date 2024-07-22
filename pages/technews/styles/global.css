@@ -18,8 +18,19 @@
   --archivo: "Archivo", sans-serif; 
 }
 
+#app {
+  max-width: 22.5rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
 body {
   background-color: var(--bg-color);
+}
+
+main {
+  margin-block: 1rem;
+  row-gap: 2rem;
 }
 
 h1,
@@ -45,6 +56,11 @@ h4 {
   font: 700 1rem/140% var(--archivo);
 }
 
+a {
+  font: 600 0.875rem/145% var(--archivo);
+  color: var(--txt-color-second);
+}
+
 span {
   font: 600 0.875rem/145% var(--archivo);
   color: var(--txt-color-second);
@@ -55,6 +71,40 @@ p {
   color: var(--txt-color-second);
 }
 
+img {
+  max-width: 100%;
+}
+
 ul[role="list"] {
   list-style: none;
+}
+
+.content-tag {
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: .25rem .5rem;
+  border-radius: 4px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  box-shadow: 0 .4rem 1.6rem rgba(2, 6, 23, 0.251);
+}
+
+@media (width > 64em) {
+  #app {
+    max-width: 80rem;
+  }
+
+  main {
+    margin-block: 2.5rem;
+    row-gap: 5rem;
+    column-gap: 2rem;
+
+    grid-template-columns: 2fr 1.4fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "ai aside";
+  }
 }

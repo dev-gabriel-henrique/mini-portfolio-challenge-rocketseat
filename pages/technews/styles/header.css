@@ -1,6 +1,7 @@
 header {
   & .initial {
-    padding: 1rem;
+    padding-block: 1rem;
+
     & ul {
       justify-content: space-between;
     }
@@ -9,7 +10,7 @@ header {
   & .selector {
     border-block: 1px solid var(--stroke-color);
     overflow-x: scroll;
-    padding: 0.875rem 1rem;
+    padding-block: 0.875rem;
 
     & ul {
       gap: 1rem;
@@ -30,7 +31,7 @@ header {
 
   @media (width >= 64em) {
     & .initial {
-      padding: 1.25rem 2rem;
+      padding-block: 2rem;
 
       & li {
         gap: .5rem;
