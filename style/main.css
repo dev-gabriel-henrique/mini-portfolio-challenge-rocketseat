@@ -9,12 +9,17 @@
   border-inline: 3px solid rgb(99, 159, 105);
   
   & .cards {
+    display: grid;
     padding: 1.6rem;
     transform: scale(1.0);
     transition: transform 500ms ease;
+    gap: 1rem;
 
+    & img {
+      border-radius: 10px;
+    }
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 }
