@@ -17,6 +17,7 @@
 
 body {
   background-color: #16181D;
+  scroll-behavior: smooth;
 }
 
 h1 {

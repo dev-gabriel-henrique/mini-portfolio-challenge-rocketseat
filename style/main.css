@@ -7,6 +7,7 @@
  
   justify-content: center;
   border-inline: 3px solid rgb(99, 159, 105);
+  overflow: hidden;
   
   & .cards {
     display: grid;
