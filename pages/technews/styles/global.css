@@ -16,6 +16,11 @@
   --txt-color-second: #CBD5E1;
 
   --archivo: "Archivo", sans-serif; 
+  --svg: var(--txt-color-second);
+
+  &:has(:hover) {
+    --svg: var(--brand-color-dark);
+  }
 }
 
 #app {
@@ -59,6 +64,7 @@ h4 {
 a {
   font: 600 0.875rem/145% var(--archivo);
   color: var(--txt-color-second);
+  text-decoration: none;
 }
 
 span {

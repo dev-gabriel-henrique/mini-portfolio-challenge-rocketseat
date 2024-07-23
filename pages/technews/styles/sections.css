@@ -1,10 +1,36 @@
+section header {
+  border-top: 1px solid var(--stroke-color);
+  padding-block: 1.2rem 2.4rem;
+  justify-content: space-between;
+
+  & h3 {
+    font: 600 0.875rem/145% var(--archivo);
+    color: var(--txt-color-second);
+  }
+
+  & span {
+    background: url(../assets/icons/ArrowRight.svg) no-repeat center;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &:hover strong {
+    color: var(--brand-color-light);
+  }
+
+  &:hover span {
+    background: url(../assets/icons/ArrowRightHover.svg) no-repeat center;
+  }
+}
+
 #featured {
   & img {
     height: 100%;
     object-fit: cover;
   }
 
-  & h1, h3 {
+  & h1,
+  h3 {
     max-width: 19rem;
     max-height: 4.8em;
     text-overflow: clip;
@@ -32,7 +58,39 @@
       & span {
         margin-bottom: 0.5rem;
       }
+    }
+  }
+}
 
+#weekly {
+  & .notices {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+
+    
+    & .card {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+      display: grid;
+      gap: .5rem;
+      
+      & figcaption {
+        max-width: 19rem;
+        display: -webkit-box;
+        display: -moz-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+      }
+      & .content-tag {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+      }
     }
   }
 }
@@ -42,8 +100,10 @@
     grid-auto-flow: column;
     grid-area: featured;
 
-    & h1, h3 {
+    & h1,
+    h3 {
       max-width: 35rem;
+      max-height: 6rem;
     }
 
     & .cards {
@@ -51,13 +111,21 @@
     }
 
     & .card {
-      figcaption {
+      & figcaption {
         padding: 1.5rem;
 
         &:has(h3) {
           padding: 0.75rem;
         }
       }
+    }
+  }
+
+  #weekly {
+    grid-area: weekly;
+
+    & .notices {
+      display: flex;
     }
   }
 }
