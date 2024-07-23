@@ -39,6 +39,7 @@ header {
     }
 
     & .selector {
+      overflow: hidden;
       & ul {
         justify-content: space-between;
       }

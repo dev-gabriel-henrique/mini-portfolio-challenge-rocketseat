@@ -86,14 +86,17 @@ ul[role="list"] {
 }
 
 .content-tag {
-  display: inline-block;
   background-color: var(--brand-color-dark);
   padding: .25rem .5rem;
+  max-width: fit-content;
+  height: fit-content;
   border-radius: 4px;
+
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   box-shadow: 0 .4rem 1.6rem rgba(2, 6, 23, 0.251);
+
 }
 
 @media (width > 64em) {

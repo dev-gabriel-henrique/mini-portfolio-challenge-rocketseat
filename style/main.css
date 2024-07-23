@@ -1,7 +1,28 @@
 #project {
   margin-bottom: 5.6rem;
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+  
+ 
+  justify-content: center;
+  border-inline: 3px solid rgb(99, 159, 105);
+  
   & .cards {
-    border: 1px solid red;
     padding: 1.6rem;
+    transform: scale(1.0);
+    transition: transform 500ms ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (width >= 64em) {
+  #project {
+    display: flex;
+    border-block: 3px solid rgb(99, 159, 105);
+    border-inline: none;
   }
 }
